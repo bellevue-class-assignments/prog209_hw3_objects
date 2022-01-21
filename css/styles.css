@@ -1,0 +1,41 @@
+body {
+    font-family: Consolas, monaco, monospace;
+}
+
+#start {
+    height: 450px;
+    width: 600px;
+    position: relative;
+    color: white;
+    font-size: xx-large;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(87deg, rgba(0, 0, 0, 1) 0%, rgba(23, 207, 73, 1) 100%);
+}
+
+#start:hover {
+    font-weight: bolder;
+}
+
+#endSection {
+    display: none;
+}
+
+#end {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    height: 450px;
+    width: 600px;
+    position: relative;
+    color: black;
+    font-size: xx-large;
+    background: rgba(23, 207, 73);
+    background: linear-gradient(87deg, rgba(23, 207, 73, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+#end:hover {
+    font-weight: unset;
+}
+
+#updateInput {
+    visibility: hidden;
+}
