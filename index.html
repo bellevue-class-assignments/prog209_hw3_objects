@@ -3,31 +3,47 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>PROG 209 : HW 2</title>
+        <title>PROG 209 : HW 3</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div id="fixedheader">KG7PNH's Move Database</div>
+        
+        <div id="container">
+        <h1>KG7PNH's Move Database</h1>
 
-        <h1>Swap first and last letters</h1>
-        <button id="getInput">Start</button>
-        <section id="startSection">
-            <div id="start">
-                <ul id="ulOriginal">
-                </ul>
-                <button id="updateInput">Change the words!</button>
+        <div id="movieInput">
+            <div class="movieTable">
+                <div class="tableRow">
+                    <div class="tableName inputFirst">Movie Title:</div>
+                    <div class="tableValue"><input type="text" id="movieTitle" placeholder="enter movie title..."></div>
+                </div>
+                <div class="tableRow">
+                    <div class="tableName inputFirst">Year Produced:</div>
+                    <div class="tableValue"><select id="movieYear"></select></div>
+                </div>
+                <div class="tableRow">
+                    <div class="tableName inputFirst">Rating:</div>
+                    <div class="tableValue"><select id="movieRating"></select></div>
+                </div>
             </div>
-        </section>
+            <div class="movieTable submit"><button id="movieSubmit">Save Movie</button></div>
+            <div id="libraryButton" class="movieTable submit"><button id="displayLibrary">Display Library</button></div>
+        </div>
+        <div id="library">
+            <div class="fill"></div>
 
-        <section id="endSection">
-            <div id="end">
-                <ul id="ulConverted">
-                </ul>
+            <div class="submit">Movie Library</div>
+
+            <div id="movieLibrary" class="movieTable">
             </div>
-        </section>
-
+        </div>
+        <div id="fixedfooter">&copy;2022 <a id="footeremail" href="mailto:kg7pnh@arrl.net">KG7PNH</a></div>
+        </div>
+    
 	    <script src="js/program.js"></script>
     </body>
 </html>

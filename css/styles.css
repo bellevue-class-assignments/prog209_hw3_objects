@@ -2,7 +2,8 @@ body {
     font-family: Consolas, monaco, monospace;
 }
 
-#start {
+
+/* #start {
     height: 450px;
     width: 600px;
     position: relative;
@@ -10,17 +11,19 @@ body {
     font-size: xx-large;
     background: rgb(0, 0, 0);
     background: linear-gradient(87deg, rgba(0, 0, 0, 1) 0%, rgba(23, 207, 73, 1) 100%);
-}
+} */
 
-#start:hover {
+
+/* #start:hover {
     font-weight: bolder;
 }
 
 #endSection {
     display: none;
-}
+} */
 
-#end {
+
+/* #end {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     height: 450px;
@@ -30,12 +33,160 @@ body {
     font-size: xx-large;
     background: rgba(23, 207, 73);
     background: linear-gradient(87deg, rgba(23, 207, 73, 1) 0%, rgba(0, 0, 0, 1) 100%);
-}
+} */
 
-#end:hover {
+
+/* #end:hover {
     font-weight: unset;
 }
 
 #updateInput {
     visibility: hidden;
+} */
+
+.fill {
+    height: 25px;
+}
+
+.movieTable {
+    background-color: rgb(5, 14, 63);
+    border-color: rgb(5, 14, 63);
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+    display: table;
+    margin: auto;
+    width: 400px;
+}
+
+.tableRow {
+    display: table-row;
+}
+
+.tableName {
+    display: table-cell;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+.tableValue {
+    display: table-cell;
+}
+
+.inputFirst {
+    width: 150px;
+}
+
+.emptyLibrary,
+.libraryData {
+    background-color: white;
+    color: black;
+}
+
+.footerTitle,
+.movieTitle,
+#movieTitle {
+    width: 248px;
+}
+
+.footerCount {
+    text-align: right;
+}
+
+.footerCount,
+.movieYear,
+.movieRating {
+    width: 76px;
+}
+
+#movieYear,
+#movieRating {
+    width: 255px;
+}
+
+.submit {
+    margin: auto;
+    width: 400px;
+}
+
+#library {
+    visibility: hidden;
+}
+
+#movieSubmit {
+    border-color: green;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 400px;
+}
+
+#libraryButton {
+    visibility: hidden;
+}
+
+#displayLibrary {
+    border-color: lightblue;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 400px;
+}
+
+#movieSubmit:hover {
+    border-color: green;
+    border-radius: 12px;
+    background-color: green;
+    color: white;
+    width: 400px;
+}
+
+#displayLibrary:hover {
+    border-color: green;
+    border-radius: 12px;
+    background-color: lightblue;
+    color: black;
+    width: 400px;
+}
+
+#fixedheader {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    color: #CCC;
+    background: rgb(5, 14, 63);
+    padding: 20px;
+}
+
+#fixedfooter {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    color: #CCC;
+    background: rgb(5, 14, 63);
+    padding: 8px;
+}
+
+#footeremail {
+    color: gray;
+    text-decoration: none;
+}
+
+#footeremail:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.pagingButtons {
+    background-color: lightblue;
+    border-radius: 12px;
+    color: black;
+    font-weight: bold;
+    margin: 2px;
+    padding: 2px;
 }
