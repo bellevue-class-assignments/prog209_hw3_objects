@@ -103,7 +103,7 @@ function loadLibrary() {
     // create header row for library table
     createDiv("libraryHeader", "tableRow", null, movieLibraryTable);
     let libraryHeader = document.querySelector("#libraryHeader");
-    createDiv(null, "tableValue movieTitle", "Title", libraryHeader);
+    createDiv(null, "tableValue libraryTitle", "Title", libraryHeader);
     createDiv(null, "tableValue movieRating", "Rating", libraryHeader);
     createDiv(null, "tableValue movieYear", "Year", libraryHeader);
 
