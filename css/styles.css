@@ -48,6 +48,15 @@ body {
     height: 25px;
 }
 
+.movieForm {
+    width: 500px;
+}
+
+.movieTable {
+    width: 100%;
+}
+
+.movieForm,
 .movieTable {
     background-color: rgb(5, 14, 63);
     border-color: rgb(5, 14, 63);
@@ -56,7 +65,6 @@ body {
     color: white;
     display: table;
     margin: auto;
-    width: 400px;
 }
 
 .tableRow {
@@ -74,7 +82,7 @@ body {
 }
 
 .inputFirst {
-    width: 150px;
+    width: 125px;
 }
 
 .emptyLibrary,
@@ -86,31 +94,41 @@ body {
 .footerTitle,
 .movieTitle,
 #movieTitle {
-    width: 248px;
+    width: 348px;
+}
+
+.libraryTitle {
+    width: 70%;
 }
 
 .footerCount {
     text-align: right;
 }
 
-.footerCount,
-.movieYear,
 .movieRating {
-    width: 76px;
+    width: 20%;
+}
+
+.movieYear {
+    width: 10%;
 }
 
 #movieYear,
 #movieRating {
-    width: 255px;
+    width: 355px;
 }
 
 .submit {
     margin: auto;
-    width: 400px;
+    width: 500px;
 }
 
 #library {
     visibility: hidden;
+}
+
+#library {
+    width: 100%;
 }
 
 #movieSubmit {
@@ -119,7 +137,7 @@ body {
     background-color: white;
     color: black;
     font-weight: bold;
-    width: 400px;
+    width: 500px;
 }
 
 #libraryButton {
@@ -132,7 +150,7 @@ body {
     background-color: white;
     color: black;
     font-weight: bold;
-    width: 400px;
+    width: 500px;
 }
 
 #movieSubmit:hover {
@@ -140,7 +158,7 @@ body {
     border-radius: 12px;
     background-color: green;
     color: white;
-    width: 400px;
+    width: 500px;
 }
 
 #displayLibrary:hover {
@@ -148,7 +166,7 @@ body {
     border-radius: 12px;
     background-color: lightblue;
     color: black;
-    width: 400px;
+    width: 500px;
 }
 
 #fixedheader {
@@ -182,11 +200,12 @@ body {
     text-decoration: underline;
 }
 
-.pagingButtons {
+
+/* .pagingButtons {
     background-color: lightblue;
     border-radius: 12px;
     color: black;
     font-weight: bold;
     margin: 2px;
     padding: 2px;
-}
+} */

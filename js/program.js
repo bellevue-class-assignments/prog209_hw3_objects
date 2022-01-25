@@ -67,7 +67,6 @@ function createOption(optionValue, optionTextValue, selectObject) {
 
 // add new movie to library
 function submitMovie() {
-    console.log(movieLibrary)
     if (validateInput()) {
         movieLibrary.push({ "title": movieTitle.value, "rating": movieRating.value, "year": movieYear.value });
         displayLibraryButton.style.visibility = "visible";
@@ -80,7 +79,7 @@ function submitMovie() {
 
 // validate that all fields have been set appropriately
 function validateInput() {
-    if (movieTitle.value.length > 3 &&
+    if (movieTitle.value.length > 0 &&
         movieYear.value != 0 &&
         movieRating.value != 0) {
         return true;
@@ -118,12 +117,13 @@ function loadLibrary() {
     // else add all the movies in the library
     else {
         // for (i = currentIndex; i < 10; i++) {
+        let star = "\u2B50"
         for (i = 0; i < movieLibrary.length; i++) {
             let movieDivId = "Movie" + i;
             createDiv(movieDivId, "tableRow", null, movieLibraryTable);
             let movieDiv = document.querySelector("#" + movieDivId);
             createDiv(null, "tableValue libraryData", movieLibrary[i].title, movieDiv);
-            createDiv(null, "tableValue libraryData", movieLibrary[i].rating, movieDiv);
+            createDiv(null, "tableValue libraryData", star.repeat(movieLibrary[i].rating), movieDiv);
             createDiv(null, "tableValue libraryData", movieLibrary[i].year, movieDiv);
         }
         // if (movieLibrary.length > 10) {
