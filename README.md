@@ -1,3 +1,9 @@
-# Basic Website Template
+# prog209 HW 3 objects
 
-This is a basic website template for use in PROG209. It is a copy of the homework for assignment #2.
+**Due** Monday by 11:59pm \
+**Points** 10 \
+**Submitting** a text entry box
+
+Please write a program per this spec: [OjectHW-v1.docx](OjectHW-v1.docx)
+
+submit your code by providing the GitHub link.
