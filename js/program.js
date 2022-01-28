@@ -39,6 +39,15 @@ displayLibraryButton.addEventListener("click", displayLibrary, false);
 
 loadRatings();
 loadYears();
+// only uncomment during testing
+// loadTestData();
+
+// load test data
+function loadTestData() {
+    movieLibrary.push({ "title": "test 1", "rating": 3, "year": 1999 });
+    movieLibrary.push({ "title": "test 2", "rating": 5, "year": 2005 });
+}
+
 
 // load valid years into year dropdown
 function loadYears() {
